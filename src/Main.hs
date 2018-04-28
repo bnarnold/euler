@@ -1,5 +1,8 @@
 module Main where
 
+import Problem615
+
 main :: IO ()
 main = do
-  putStrLn "hello world"
+  n <- readLn
+  print $ findPrimes' n n
